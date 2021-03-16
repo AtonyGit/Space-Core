@@ -3,11 +3,18 @@
     "rules": "database.rules.json"
   },
   "hosting": {
+    "site" : "spacecore-0",
     "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
