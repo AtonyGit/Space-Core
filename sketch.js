@@ -13,15 +13,15 @@ function preload(){
 
 function setup(){
   createCanvas(displayWidth,displayHeight)
-info = createSprite(1040,960,20,20);
+info = createSprite(displayWidth/1.7,960,20,20);
 info.addImage(infoImage);
-settings = createSprite(1840,90,20,20);
+settings = createSprite(displayWidth-80,90,20,20);
 settings.addImage(settingsImage);
-stats = createSprite(1400,960,20,20);
+stats = createSprite(displayWidth/1.3,960,20,20);
 stats.addImage(statsImage);
-updates = createSprite(320,960,20,20);
+updates = createSprite(displayWidth/4,960,20,20);
 updates.addImage(updatesImage);
-shop = createSprite(680,960,20,20);
+shop = createSprite(displayWidth/2.5,960,20,20);
 shop.addImage(shopImage)
 
 local = createButton('Local')
